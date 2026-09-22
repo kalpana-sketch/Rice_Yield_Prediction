@@ -497,12 +497,12 @@ The final tuned Random Forest achieves a **Test RMSE of 541.77 kg/ha**,
 
 ## 👩‍💻 Author
 
-**Kalpana Pal (23052398)**
-**Ridhima (23052415)**
-**Mayank (23052401)**
-**Naman**
-**Mihir**
-**Shauryan**
+- **Kalpana Pal (23052398)**
+- **Ridhima (23052415)**
+- **Mayank (23052401)**
+- **Naman**
+- **Mihir**
+- **Shauryan**
 
 
 B.Tech --- Computer Science & Engineering
