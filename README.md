@@ -365,6 +365,154 @@ prediction model**, not as a production agricultural decision system.
 
 ------------------------------------------------------------------------
 
+\## 🔬 Explainable AI \& Robustness Analysis
+
+
+
+The project extends model evaluation with SHAP and LIME to understand how the trained Random Forest produces predictions.
+
+
+
+\### Phase 2 — SHAP Analysis
+
+
+
+\- Global and local feature explanations.
+
+\- Tree-Path-Dependent SHAP as the primary method.
+
+\- SHAP additivity verification.
+
+\- Train/test feature-importance consistency.
+
+\- Grouped and encoded feature-importance analysis.
+
+\- SHAP dependence, beeswarm and waterfall plots.
+
+
+
+\### Phase 3 — LIME Analysis
+
+
+
+\- Local explanations for four selected test observations.
+
+\- Largest underprediction and overprediction cases.
+
+\- Typical prediction and Kharif examples.
+
+\- Local surrogate model evaluation using LIME R².
+
+\- Comparison of local SHAP and LIME explanations.
+
+
+
+\### Phase 4 — Robustness Analysis
+
+
+
+\- SHAP global-importance stability.
+
+\- SHAP method sensitivity.
+
+\- LIME random-seed sensitivity.
+
+\- LIME sample-count sensitivity.
+
+\- LIME kernel-width sensitivity.
+
+\- Cross-method SHAP/LIME agreement.
+
+\- Automated robustness verification.
+
+
+
+\*\*Important:\*\* Explanations describe model behaviour, not causal relationships. Kharif is absent from training data, so its season-specific effect has not been learned by the model.
+
+
+
+\## 📊 Interactive Streamlit Dashboard
+
+
+
+The project includes a multi-page dashboard for exploring the dataset, making predictions and understanding model behaviour.
+
+
+
+\### Dashboard pages
+
+
+
+1\. \*\*Overview:\*\* Dataset statistics, filters and yield visualizations.
+
+2\. \*\*District Analysis:\*\* District rankings, seasonal comparisons and trends.
+
+3\. \*\*Yield Prediction:\*\* Interactive predictions using the saved Random Forest.
+
+4\. \*\*Model Explainability:\*\* SHAP and LIME visualizations and local explanations.
+
+5\. \*\*Model Performance:\*\* Test metrics, residual analysis and prediction errors.
+
+
+
+The dashboard loads the saved model and existing explainability artifacts. It does not retrain the model.
+
+
+
+\### Run the dashboard locally
+
+
+
+Create and activate a Python virtual environment:
+
+
+
+```bash
+
+python -m venv .venv
+
+```
+
+
+
+Windows PowerShell:
+
+
+
+```powershell
+
+.\\.venv\\Scripts\\Activate.ps1
+
+```
+
+
+
+Install dependencies:
+
+
+
+```bash
+
+pip install -r requirements.txt
+
+```
+
+
+
+Start the dashboard from the project root:
+
+
+
+```bash
+
+streamlit run dashboard/app.py
+
+```
+
+
+
+The dashboard will open in your browser.
+
 ## 🛠️ Technologies Used
 
 -   Python

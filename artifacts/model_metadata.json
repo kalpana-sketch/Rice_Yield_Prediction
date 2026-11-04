@@ -1,0 +1,88 @@
+{
+  "baseline_test": {
+    "rmse": 541.7697395333312,
+    "mae": 435.91360486142503,
+    "r2": 0.4165031866242306
+  },
+  "versions": {
+    "numpy": "2.2.6",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "pandas": "2.3.0",
+    "joblib": "1.6.0"
+  },
+  "python": "3.13.5",
+  "numerical_features": [
+    "area",
+    "year",
+    "avg_temperature_c",
+    "rainfall_mm",
+    "humidity_pct",
+    "soil_ph",
+    "nitrogen_kg_ha",
+    "phosphorus_kg_ha",
+    "potassium_kg_ha",
+    "irrigation_pct"
+  ],
+  "categorical_features": [
+    "district",
+    "season"
+  ],
+  "training_seasons": [
+    "Autumn",
+    "Summer",
+    "Winter"
+  ],
+  "training_districts": [
+    "Anugul",
+    "Balangir",
+    "Balasore",
+    "Bargarh",
+    "Bhadrak",
+    "Boudh",
+    "Cuttack",
+    "Deogarh",
+    "Dhenkanal",
+    "Gajapati",
+    "Ganjam",
+    "Jagatsinghapur",
+    "Jajapur",
+    "Jharsuguda",
+    "Kalahandi",
+    "Kandhamal",
+    "Kendrapara",
+    "Kendujhar",
+    "Khordha",
+    "Koraput",
+    "Malkangiri",
+    "Mayurbhanj",
+    "Nabarangpur",
+    "Nayagarh",
+    "Nuapada",
+    "Puri",
+    "Rayagada",
+    "Sambalpur",
+    "Sonepur",
+    "Sundargarh"
+  ],
+  "rf_params": {
+    "bootstrap": true,
+    "ccp_alpha": 0.0,
+    "criterion": "squared_error",
+    "max_depth": 15,
+    "max_features": "log2",
+    "max_leaf_nodes": null,
+    "max_samples": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 1,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "monotonic_cst": null,
+    "n_estimators": 100,
+    "n_jobs": -1,
+    "oob_score": false,
+    "random_state": 42,
+    "verbose": 0,
+    "warm_start": false
+  }
+}

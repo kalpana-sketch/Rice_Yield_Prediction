@@ -1,0 +1,13 @@
+rank,variable,lime_rule,weight_kg_ha,direction,held_fixed_unseen
+1,year,year > 2020.00,184.7093583887694,raises prediction,False
+2,area,area > 82000.00,94.98939811982075,raises prediction,False
+3,district,district=Kendrapara,-26.632456852862934,lowers prediction,False
+4,soil_ph,soil_ph <= 5.91,25.385567970629946,raises prediction,False
+5,phosphorus_kg_ha,phosphorus_kg_ha <= 21.00,-21.067423033152803,lowers prediction,False
+6,potassium_kg_ha,potassium_kg_ha <= 152.00,17.90928787887414,raises prediction,False
+7,irrigation_pct,irrigation_pct <= 47.00,15.99351587149256,raises prediction,False
+8,humidity_pct,81.90 < humidity_pct <= 84.60,-13.696738251329515,lowers prediction,False
+9,rainfall_mm,rainfall_mm <= 1334.00,-10.577089966586813,lowers prediction,False
+10,nitrogen_kg_ha,284.00 < nitrogen_kg_ha <= 309.00,4.542429768636552,raises prediction,False
+11,avg_temperature_c,avg_temperature_c <= 25.90,-3.297242869175322,lowers prediction,False
+12,season,season=Kharif,0.0,lowers prediction,True

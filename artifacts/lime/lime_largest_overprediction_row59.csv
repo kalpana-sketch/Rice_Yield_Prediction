@@ -1,0 +1,13 @@
+rank,variable,lime_rule,weight_kg_ha,direction,held_fixed_unseen
+1,season,season=Summer,872.1820016427434,raises prediction,False
+2,year,year > 2020.00,187.10648625949494,raises prediction,False
+3,area,area <= 1664.00,-126.27148851089346,lowers prediction,False
+4,district,district=Deogarh,-38.92842186252606,lowers prediction,False
+5,phosphorus_kg_ha,phosphorus_kg_ha > 28.00,38.37466081584517,raises prediction,False
+6,nitrogen_kg_ha,260.00 < nitrogen_kg_ha <= 284.00,33.54559200480028,raises prediction,False
+7,soil_ph,soil_ph > 6.46,-31.63562698297163,lowers prediction,False
+8,potassium_kg_ha,potassium_kg_ha <= 152.00,22.935284728185895,raises prediction,False
+9,humidity_pct,79.20 < humidity_pct <= 81.90,-12.620805688264063,lowers prediction,False
+10,avg_temperature_c,25.90 < avg_temperature_c <= 26.80,-11.630517343662074,lowers prediction,False
+11,irrigation_pct,irrigation_pct > 67.00,8.799618167702883,raises prediction,False
+12,rainfall_mm,rainfall_mm <= 1334.00,-6.751267184662703,lowers prediction,False

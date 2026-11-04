@@ -1,0 +1,13 @@
+rank,variable,lime_rule,weight_kg_ha,direction,held_fixed_unseen
+1,year,year > 2020.00,188.56922034162645,raises prediction,False
+2,season,season=Winter,-88.21930805372975,lowers prediction,False
+3,district,district=Bargarh,82.86843111115446,raises prediction,False
+4,area,area > 82000.00,58.4263758929438,raises prediction,False
+5,humidity_pct,79.20 < humidity_pct <= 81.90,-31.84093715000353,lowers prediction,False
+6,phosphorus_kg_ha,phosphorus_kg_ha <= 21.00,-30.286677232318425,lowers prediction,False
+7,potassium_kg_ha,152.00 < potassium_kg_ha <= 165.00,-27.045739242209425,lowers prediction,False
+8,nitrogen_kg_ha,260.00 < nitrogen_kg_ha <= 284.00,26.189603658364465,raises prediction,False
+9,soil_ph,5.91 < soil_ph <= 6.18,22.28907431730257,raises prediction,False
+10,rainfall_mm,rainfall_mm <= 1334.00,-16.15848084458782,lowers prediction,False
+11,avg_temperature_c,25.90 < avg_temperature_c <= 26.80,7.2363887452297275,raises prediction,False
+12,irrigation_pct,irrigation_pct <= 47.00,2.4422625569339633,raises prediction,False

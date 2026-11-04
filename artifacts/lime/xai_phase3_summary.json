@@ -1,0 +1,79 @@
+{
+  "lime_version": "0.2.0.1",
+  "config": {
+    "mode": "regression",
+    "discretize_continuous": true,
+    "discretizer": "quartile",
+    "kernel_width": null,
+    "num_samples": 5000,
+    "num_features": 12,
+    "sample_around_instance": false,
+    "random_state": 42
+  },
+  "wrapper_verified_against_pipeline": true,
+  "wrapper_test_rmse": 541.7697395333312,
+  "n_cases": 4,
+  "cases": [
+    {
+      "case": "largest under-prediction",
+      "row": 92,
+      "district": "Bargarh",
+      "season": "Winter",
+      "year": 2022,
+      "actual": 4168.635457683146,
+      "model_prediction": 2432.379821671002,
+      "lime_local_pred": 2382.5265725326476,
+      "lime_intercept": 2188.056358431941,
+      "local_r2": 0.029602981148985297,
+      "unseen_held_fixed": ""
+    },
+    {
+      "case": "largest over-prediction",
+      "row": 59,
+      "district": "Deogarh",
+      "season": "Summer",
+      "year": 2024,
+      "actual": 1366.25,
+      "model_prediction": 2406.331375952939,
+      "lime_local_pred": 2825.929214739324,
+      "lime_intercept": 1890.8236986935315,
+      "local_r2": 0.6718324509894251,
+      "unseen_held_fixed": ""
+    },
+    {
+      "case": "typical row (|error| nearest the median)",
+      "row": 50,
+      "district": "Kendrapara",
+      "season": "Kharif",
+      "year": 2024,
+      "actual": 2066.215413209663,
+      "model_prediction": 2422.921964813374,
+      "lime_local_pred": 2424.803104222319,
+      "lime_intercept": 2156.544497197203,
+      "local_r2": 0.1423820943632722,
+      "unseen_held_fixed": "season"
+    },
+    {
+      "case": "Kharif row (unseen season; |error| nearest Kharif median)",
+      "row": 64,
+      "district": "Boudh",
+      "season": "Kharif",
+      "year": 2023,
+      "actual": 2312.458937198068,
+      "model_prediction": 2610.5044020831333,
+      "lime_local_pred": 2527.928255122704,
+      "lime_intercept": 2140.0958307212304,
+      "local_r2": 0.14472043959259562,
+      "unseen_held_fixed": "season"
+    }
+  ],
+  "unseen_season_rows_in_test": 60,
+  "library_versions": {
+    "numpy": "2.2.6",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "pandas": "2.3.0",
+    "lime": "0.2.0.1",
+    "shap": "0.54.1"
+  }
+}

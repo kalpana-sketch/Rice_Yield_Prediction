@@ -1,0 +1,137 @@
+{
+    "phase": "Phase 4 — Cross-Method Comparison and Robustness Analysis",
+    "created_on": "2026-11-04T22:39:02",
+    "verification": {
+        "checks_passed": 10,
+        "checks_total": 10,
+        "ready": true
+    },
+    "global_shap": {
+        "train_test_top5_overlap": 5,
+        "spearman_train_test": 0.9161,
+        "top5_variables": [
+            "season",
+            "year",
+            "district",
+            "area",
+            "humidity_pct"
+        ],
+        "method_b_method_c_top5_overlap": 5,
+        "method_b_method_c_spearman": 0.993
+    },
+    "local_shap_lime": {
+        "cases": {
+            "92": {
+                "lime_local_r2": 0.0296,
+                "direction_agreement_pct": 75.0,
+                "top5_overlap": 2,
+                "spearman": -0.0559
+            },
+            "59": {
+                "lime_local_r2": 0.6718,
+                "direction_agreement_pct": 91.67,
+                "top5_overlap": 4,
+                "spearman": 0.8462
+            },
+            "50": {
+                "lime_local_r2": 0.1424,
+                "direction_agreement_pct": 81.82,
+                "top5_overlap": 4,
+                "spearman": 0.7364
+            },
+            "64": {
+                "lime_local_r2": 0.1447,
+                "direction_agreement_pct": 81.82,
+                "top5_overlap": 4,
+                "spearman": 0.6727
+            }
+        },
+        "overall_direction_agreement_pct": 82.6,
+        "eligible_feature_comparisons": 46,
+        "matching_directions": 38,
+        "disagreeing_directions": 8,
+        "mean_spearman": 0.5498,
+        "median_spearman": 0.7045,
+        "mean_kendall": 0.4727,
+        "median_kendall": 0.5818
+    },
+    "lime_seed_sensitivity": {
+        "seeds": [
+            21,
+            42,
+            100,
+            123,
+            2026
+        ],
+        "num_samples": 5000,
+        "local_r2_mean": {
+            "92": 0.0319,
+            "59": 0.6734,
+            "50": 0.1415,
+            "64": 0.1408
+        },
+        "local_r2_std": {
+            "92": 0.0039,
+            "59": 0.005,
+            "50": 0.006,
+            "64": 0.007
+        },
+        "ranking_stability_mean_spearman": {
+            "92": 0.6573,
+            "59": 0.8014,
+            "50": 0.7385,
+            "64": 0.828
+        }
+    },
+    "lime_sample_count_sensitivity": {
+        "sample_counts": [
+            1000,
+            3000,
+            5000,
+            10000
+        ],
+        "reference_samples": 5000,
+        "conclusion": "Increasing the sample count did not consistently improve local R2 or feature-weight agreement."
+    },
+    "lime_kernel_width_sensitivity": {
+        "default_kernel_width": 2.5981,
+        "tested_widths": {
+            "narrow": 1.299,
+            "default": 2.5981,
+            "wide": 5.1962
+        },
+        "conclusion": "Feature rankings were generally stable across the tested kernel widths, although local R2 and some weight magnitudes changed."
+    },
+    "interventional_shap": {
+        "status": "Not accepted for quantitative interpretation",
+        "background_size": 100,
+        "background_random_state": 42,
+        "expected_value": 2172.1511160922887,
+        "test_rows": 174,
+        "max_absolute_additivity_gap": 39.167543232133085,
+        "mean_absolute_additivity_gap": 3.3244556830641616,
+        "median_absolute_additivity_gap": 0.9279149466030958,
+        "percentile_90_gap": 10.093398463154475,
+        "observations_above_10_kg_ha": 18,
+        "strict_additivity_passed": false,
+        "decision": "Excluded from quantitative interpretation. Tree-Path-Dependent SHAP retained as the primary method."
+    },
+    "primary_shap": {
+        "method": "Tree-Path-Dependent",
+        "train_max_additivity_gap": 8.185452315956354e-12,
+        "test_max_additivity_gap": 5.002220859751105e-12,
+        "additivity_verified": true
+    },
+    "limitations": [
+        "SHAP and LIME explain model behaviour, not causal effects.",
+        "Only four selected test observations were used for local cross-method comparison.",
+        "LIME local fit was weak for three of the four observations.",
+        "LIME results depend on sampling and neighbourhood settings.",
+        "The Kharif season was unseen during training and held fixed in LIME explanations.",
+        "Kharif season contributions must not be interpreted as learned effects.",
+        "Correlated predictors can share or redistribute attribution.",
+        "The overall 82.6 percent direction agreement is based on 46 eligible comparisons from four cases.",
+        "Interventional SHAP failed additivity verification and was excluded.",
+        "The analysis does not establish causal relationships or guarantee performance on future years."
+    ]
+}

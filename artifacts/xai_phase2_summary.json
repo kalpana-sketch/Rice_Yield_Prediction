@@ -1,0 +1,60 @@
+{
+  "baseline_verified": {
+    "rmse": 541.7697395333312,
+    "mae": 435.91360486142503,
+    "r2": 0.4165031866242306
+  },
+  "pre_shap_matrix_sparse": true,
+  "shap_input_matrix_sparse": false,
+  "n_encoded_features": 43,
+  "n_original_variables": 12,
+  "shap_method": "Tree-Path-Dependent",
+  "background": "No explicit background dataset; uses training statistics stored in the trees",
+  "expected_value_kg_ha": 2177.2042298882275,
+  "n_train_rows": 665,
+  "n_test_rows": 174,
+  "n_test_rows_unseen_season": 60,
+  "unseen_season_labels": [
+    "Kharif"
+  ],
+  "train_max_additivity_gap": 7.275957614183426e-12,
+  "test_max_additivity_gap": 4.547473508864641e-12,
+  "additivity_verified": true,
+  "top5_variables_train_methodB": [
+    "season",
+    "year",
+    "district",
+    "area",
+    "humidity_pct"
+  ],
+  "top5_variables_test_methodB": [
+    "season",
+    "year",
+    "district",
+    "area",
+    "humidity_pct"
+  ],
+  "top5_encoded_train": [
+    "cat__season_Autumn",
+    "cat__season_Summer",
+    "num__year",
+    "num__area",
+    "cat__district_Sonepur"
+  ],
+  "top5_encoded_test": [
+    "cat__season_Autumn",
+    "cat__season_Summer",
+    "num__year",
+    "num__area",
+    "cat__district_Sonepur"
+  ],
+  "library_versions": {
+    "numpy": "2.2.6",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "pandas": "2.3.0",
+    "numba": "0.68.1",
+    "llvmlite": "0.50.0",
+    "shap": "0.54.1"
+  }
+}

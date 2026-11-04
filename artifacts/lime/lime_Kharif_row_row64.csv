@@ -1,0 +1,13 @@
+rank,variable,lime_rule,weight_kg_ha,direction,held_fixed_unseen
+1,year,year > 2020.00,186.4191869588296,raises prediction,False
+2,area,25000.00 < area <= 82000.00,90.54438517989728,raises prediction,False
+3,district,district=Boudh,41.11265471838684,raises prediction,False
+4,nitrogen_kg_ha,260.00 < nitrogen_kg_ha <= 284.00,37.32198156478336,raises prediction,False
+5,soil_ph,soil_ph <= 5.91,24.810864556773723,raises prediction,False
+6,potassium_kg_ha,potassium_kg_ha <= 152.00,17.057533223395673,raises prediction,False
+7,irrigation_pct,irrigation_pct <= 47.00,16.246074078476163,raises prediction,False
+8,humidity_pct,81.90 < humidity_pct <= 84.60,-15.95446223753178,lowers prediction,False
+9,rainfall_mm,1334.00 < rainfall_mm <= 1456.00,-5.543020054520005,lowers prediction,False
+10,avg_temperature_c,avg_temperature_c <= 25.90,-4.316497796625654,lowers prediction,False
+11,phosphorus_kg_ha,21.00 < phosphorus_kg_ha <= 24.00,0.13372420960823084,raises prediction,False
+12,season,season=Kharif,0.0,lowers prediction,True

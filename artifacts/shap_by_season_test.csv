@@ -1,0 +1,5 @@
+,n,area,year,avg_temperature_c,rainfall_mm,humidity_pct,soil_ph,nitrogen_kg_ha,phosphorus_kg_ha,potassium_kg_ha,irrigation_pct,district,season,unseen_in_training
+Summer,60,-11.6,150.2,4.2,-1.4,1.7,1.7,-1.1,-0.5,0.4,1.4,-2.8,502.8,False
+Kharif,60,53.9,154.5,1.4,3.7,1.0,0.2,-0.6,-0.5,2.6,-3.8,3.1,31.4,True
+Winter,30,41.5,177.0,4.1,4.1,2.7,-3.1,-1.3,-5.1,5.9,-2.8,-1.3,1.0,False
+Autumn,24,-28.9,186.8,3.9,-0.4,-3.1,-2.2,-2.3,-3.1,5.6,-5.1,-0.8,-532.6,False

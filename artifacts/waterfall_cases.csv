@@ -1,0 +1,5 @@
+case,row,district,season,year,actual,predicted,error,absolute_error,unseen_season
+largest under-prediction,92,Bargarh,Winter,2022,4168.635457683146,2432.379821671002,1736.2556360121444,1736.2556360121444,False
+largest over-prediction,59,Deogarh,Summer,2024,1366.25,2406.331375952939,-1040.0813759529392,1040.0813759529392,False
+typical row (|error| nearest the median),50,Kendrapara,Kharif,2024,2066.215413209663,2422.921964813374,-356.706551603711,356.706551603711,True
+Kharif row (unseen season; |error| nearest Kharif median),64,Boudh,Kharif,2023,2312.458937198068,2610.504402083133,-298.04546488506503,298.04546488506503,True
